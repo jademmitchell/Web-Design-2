@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google font links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+ <!-- shoelace link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.50/dist/themes/light.css">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.50/dist/shoelace.js"></script>
+  <!-- Link Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+ 
+  <link rel="stylesheet" href="styles.css"> <!-- linking to my css file-->
+  <link rel="icon" href="Images/green-logo.png"> 
+  
+  <title>Giant Pandas 101</title>
+  <meta name="author" content="Jade Mitchell">
+        <meta name="description" content="An Educational website that hopes to raise awareness for the Giant Pandas 'vulnerable status', and enrich the user with knowledge about these beautiful creatures in a fun and interactive manner.">
+        <meta name="keywords" content="Giant Panda, Panda, Giant Pandas 101, Endangered, Species, Vulnerable, World Wildlife Fund, WWF">
+</head> 
+<body id="top">
+
+  <!-- REFERENCE: ALL CONTENT sourced from https://www.worldwildlife.org/species/giant-panda and https://www.wwf.org.uk/learn/fascinating-facts/pandas-->
+
+<!-- ----- INTRO ----- -->
+  <div class="intro"></div> <!-- SVG animation -->
+    <a href="#top">
+      <svg version="1.1" id="panda-intro" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve" width="1000px" height="1000px">
+        <style type="text/css">
+            .st0{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+        </style>
+        <path class="st0 svg-elem-1" d="M229.9,305.6c0,0,3.78-8.68,36.26-30.92c0,0,12.68-3.56,14.9,12.23c0.44,0.67,2,17.13-11.12,34.03
+            c-0.22,0-12.23,17.8-28.7,16.02C241.47,337.19,222.34,330.74,229.9,305.6z"></path>
+        <path class="st0 svg-elem-2" d="M381.14,305.6c0,0-3.78-8.68-36.26-30.92c0,0-12.68-3.56-14.9,12.23c-0.44,0.67-2,17.13,11.12,34.03
+            c0.22,0,12.23,17.8,28.7,16.02C369.57,337.19,388.7,330.74,381.14,305.6z"></path>
+        <path class="st0 svg-elem-3" d="M282.4,351.43c0,0,20.47-18.46,46.27,0c0,0,6.45,8.68-10.68,17.35c-0.67,0.67-8.23,6.01-7.79,12.9
+            c-0.44,0,0.89,7.79,12.01,8.9c-0.22,0.67,5.34,0,5.34,0s10.23-0.89-2.67,4.89c-0.44,0.22-14.46,8.23-35.15,1.33
+            c-0.44-0.44-17.49-6.23-5.07-6.23c0,0,14.75,2.67,16.83-9.5c0.16,0.48,1.28-7.05-8.65-12.34
+            C292.85,369.06,278.2,362.15,282.4,351.43z"></path>
+        <path class="st0 svg-elem-4" d="M393.76,228.68c0,0,25.15-40.36,56.19-7.76c0.31,0,19.25,22.04,21.73,43.77c0.31,0.31,8.07,31.66-35.7,33.22
+            C435.36,297.29,422.01,256.31,393.76,228.68z"></path>
+        <path class="st0 svg-elem-5" d="M218.23,228.68c0,0-25.15-40.36-56.19-7.76c-0.31,0-19.25,22.04-21.73,43.77c-0.31,0.31-8.07,31.66,35.7,33.22
+            C176.63,297.29,189.98,256.31,218.23,228.68z"></path>
+        <path class="st0 svg-elem-6" d="M170.43,335.82c0,0-9.15,70.87,135.35,100.75c0,0,136.42-22.41,135.21-100.75c0-0.41,33.92,50.88-10.5,104.18
+            c-0.4,0-116.27,117.29-248.68,0C181.18,438.72,138.88,393.69,170.43,335.82z"></path>
+      </svg>
+    </a>
+  
+<!-- ----- NAVIGATION ----- -->
+  <div class="bamboo-left">
+    <img src="Images/Bamboo-border.png" alt="bamboo border">
+  </div>
+
+  <header class="navigation">
+      <sl-icon-button name="list" class="hamburger-btn"></sl-icon-button> <!-- shoelace component #1 -->
+    <nav class="menu">
+      <a href="#home">Home</a>
+      <a href="#facts">Facts</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#involved">Get Involved</a>
+    </nav>
+  </header>
+  
+  <div class="bamboo-right">
+    <img src="Images/Bamboo-border.png" alt="bamboo border"> <!-- REFERENCE: <a href='https://www.freepik.com/vectors/background'>Background vector created by brgfx - www.freepik.com</a> (image has been edited with Photoshop)-->
+  </div>
+
+<!-- ----- SECTION 1 HOME ----- -->
+  <div class="leaves" id="home">
+    <div>
+      <video id="video" loop autoplay>
+        <source src="Images/Panda-video.mp4" type="video/mp4"> Your browser does not support the video tag. <!-- REFERENCE: <a href=‘https://www.youtube.com/watch?v=dqT-UlYlg1s'>Video ‘Giant Pandas 101 Nat Geo Wild’ sourced from YouTube - https://www.youtube.com > (video has been edited) -->
+      </video> 
+    </div> 
+        
+    <div class="scroll-trigger"> <!-- CSS animation -->
+      <div class="overlay">
+        <div class="intro-para">
+          <h1>Giant Pandas 101</h1>
+          <h3>Lets protect the Giant Pandas! This website aims to help raise awarness for these beautiful creatures. Despite their change in status from 'endangered species' to 'vulnerable species', and their relative lack of natural predators, pandas are still at risk. Severe threats from humans have left just over 1,800 pandas in the wild.</h3>
+        </div>
+        <div class="scroll-down">
+          <div class="scroll scroll-down">
+              <span class="scroll-dot"></span>
+          </div>
+          <div class="arrow-down"></div>
+          <div class="arrow-down"></div>
+        </div>
+      </div>
+
+      <div class="empty"></div>
+
+      <div id="leaves" class="leaf leaf1">
+        <img src="Images/leaf-left.png" alt="leaf">
+          <div class="text left-text">
+            <h1>The Giant Panda</h1>
+            <p><b>Scientific Name:</b> Ailuropoda melanoleuca <br>
+              <b>Habitat:</b> Temperate broadleaf and mixed forests of Southwest China <br>
+              <b>Status:</b> Vulnerable <br>
+              <b>Population:</b> 1864 in the wild
+            </p>
+          </div>
+      </div>
+        
+      <div class="leaf leaf2">
+        <img src="Images/leaf-right.png" alt="leaf">
+          <div class="text right-text" >
+            <h1>Diet</h1>
+            <p>Giant pandas spend <b>10-16 hours</b> a day feeding, mainly on <b>bamboo.</b> <br>
+                Pandas are <b>99%</b> vegetarian, although <br> their digestive system is typical of a carnivore.
+                </p>
+          </div>
+      </div>
+    
+      <div class="leaf leaf3">
+        <img src="Images/leaf-left.png" alt="leaf">
+          <div class="text left-text">
+            <h1>Height and Weight</h1>
+            <p><b>Height:</b> adults can grow more than 1.2m. <br>
+              <b>Weight:</b> <b>Females</b> can grow to 100kg, while <b>Males</b> can grow to 150kg. <br>
+                A newborn panda is about <b>1/900th</b> <br> the size of its mother.
+            </p>
+          </div>
+      </div>
+    
+      <div class="leaf leaf4">
+        <img src="Images/leaf-right.png" alt="leaf">
+          <div class="text right-text" >
+            <h1>Habitat</h1>
+            <p>Their black and white fur helps them <b>camouflage</b> in their environment. <br>
+              <b>White:</b> blend into snowy backgrounds. <br>
+              <b>Black:</b> blend into shade and forest. <br>
+                They are excellent climbers despite <br> their bulk.
+            </p>
+          </div>
+      </div>
+    </div>
+
+  </div>
+
+<!-- ----- SECTION 2 FACTS ----- -->
+    <div id="facts">
+      <div class="row1">
+        <div class="box">
+          <div class="flip-card">
+              <div class="card-front">
+                <img src="images/1.png" alt="Giant Panda"> <!-- REFERENCE: <a href=‘https://www.worldwildlife.org/species/giant-panda> ALL GIANT PANDA IMAGES (in facts section) have been sourced from WWF - https://www.worldwildlife.org > -->
+              </div>
+              <div class="card-back">
+                <div>
+                  <h1>FACT #1</h1>
+                </div>
+                <div>
+                  <p>Giant pandas first became endangered in <b>1990</b> due to excessive <b>poaching</b> in the 80s and <b>deforestation,</b> depleting their bamboo food source. Now, Giant Pandas main threat is <b>loss of bamboo.</b></p>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="flip-card">
+            <div class="card-front">
+              <img src="images/2.png" alt="Giant Panda">
+            </div>
+            <div class="card-back">
+              <div>
+                <h1>FACT #2</h1>
+              </div>
+              <div>
+                <p>In <b>2016,</b> the Giant Panda officially moved from the IUCN’s Global Red List of species at risk of extinction from <b>“endangered”</b> to <b>“vulnerable”,</b> following a population growth of nearly <b>17%</b> over the past <b>decade.</b></p>
+               </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="flip-card">
+            <div class="card-front">
+              <img src="images/3.png" alt="Giant Panda">
+            </div>
+            <div class="card-back">
+              <div>
+                <h1>FACT #3</h1>
+              </div>
+              <div>
+                <p>Although <b>poaching</b> impacted pandas in the past, its impact declined since the enactment of the <b>Wildlife Protection Act (1988),</b> which bans poaching. However, pandas may get <b>caught accidentally in snares</b> set for other species.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row2">
+        <div class="box">
+          <div class="flip-card">
+            <div class="card-front">
+              <img src="images/4.png" alt="Giant Panda">
+            </div>
+            <div class="card-back">
+              <div>
+                <h1>FACT #4</h1>
+              </div>
+              <div>
+                <p>For the <b>1%</b> of their diet that isn't bamboo, pandas eat <b>eggs, small animals, carrion,</b> and forage in farmland for <b>pumpkin, kidney beans, wheat</b> and domestic <b>pig food.</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="flip-card">
+            <div class="card-front">
+              <img src="images/5.png" alt="Giant Panda">
+            </div>
+            <div class="card-back">
+              <div>
+                <h1>FACT #5</h1>
+              </div>
+              <div>
+                <p> <b>Infrastructure development</b> (such as dams, roads, and railways) is increasingly <b>fragmenting</b> and <b>isolating</b> panda populations, preventing pandas from finding new bamboo forests and potential mates.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="flip-card">
+            <div class="card-front">
+              <img src="images/6.png" alt="Giant Panda">
+            </div>
+            <div class="card-back">
+              <div>
+                <h1>FACT #6</h1>
+              </div>
+              <div>
+                <p>Mother pandas keep contact with their cub <b>nearly 100%</b> of the time during their <b>first month.</b> At <b>5 months old,</b> giant pandas learn how to <b>climb</b> - sometimes practicing by climbing on their mum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- ----- SECTION 3 GALLERY ----- -->
+  <div id="gallery">                                    <!-- sliding image slideshow with videos-->
+    <div class="carousel gs_reveal gs_reveal_fromLeft"> 
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <video class="gallery-video" src="videos/panda-slide.mp4" autoplay loop muted></video> <!-- REFERENCE: <a href=‘https://www.youtube.com/watch?v=GSll00VCljg&t=60s'>Video ‘Pandas on slide’ sourced from YouTube - https://www.youtube.com > (video has been edited)-->
+        </div>
+        <div class="carousel-item">
+          <video class="gallery-video" src="videos/panda-swing.mp4" autoplay loop muted></video> <!-- REFERENCE: <a href=‘https://www.youtube.com/watch?v=D7xWXk5T3-g&t=46s'>Video ‘Panda Funny moment videos compilation’ sourced from YouTube - https://www.youtube.com > (video has been edited)-->
+        </div>
+        <div class="carousel-item">
+          <video class="gallery-video" src="videos/panda-tired.mp4" autoplay loop muted></video> <!-- REFERENCE: <a href=‘https://www.youtube.com/watch?v=D7xWXk5T3-g&t=46s'>Video ‘Panda Funny moment videos compilation’ sourced from YouTube - https://www.youtube.com > (video has been edited)-->
+        </div>
+        <div class="carousel-item">
+          <video class="gallery-video" src="videos/panda-roll.mp4" autoplay loop muted></video> <!-- REFERENCE: <a href=‘https://www.youtube.com/watch?v=D7xWXk5T3-g&t=46s'>Video ‘Panda Funny moment videos compilation’ sourced from YouTube - https://www.youtube.com > (video has been edited)-->
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <span class="prev"></span>
+        <span class="next"></span>
+      </div>
+      <div class="carousel-indicators"></div>
+    </div>
+      
+    <div class="gallery-blurb gs_reveal gs_reveal_fromRight">
+      <h2>How we've helped Giant Pandas </h2>
+      <p>WWF (The World Wildlife Fund) is an international conservation organization. They help with conservation decisions and approaches, and equip people with the tools and knowledge they need to protect pandas and their habitat. 
+        They work towards and advocate for... 
+      </p>
+        <ul>
+          <li>increasing the area of panda habitat under legal protection,</li>
+          <li>building local capacities for nature reserve management,</li>
+          <li>patrolling against poaching and illegal logging, and</li>
+          <li>continuing research and monitoring.</li>
+        </ul>
+      <p>
+        Thanks to WWF's program, panda reserves now cover more than 3.8 million acres of forest.
+      </p>
+    </div>
+  </div>
+
+<!-- ----- SECTION 4 GET INVOLVED ----- -->
+  <div id="involved">
+    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+      
+      <!-- image -->
+      <div class="parallax-bg" data-swiper-parallax="-23%"> 
+        <img src="Images/panda-eyes.jpg" alt=""> <!-- REFERENCE: <a href=‘https://www.pinterest.com.au/pin/73957618861742786/’>Image sourced from Pinterest - https://www.pinterest.com.au</a> -->
+      </div>
+
+      <!-- swiper -->
+      <div class="swiper-wrapper">
+        <!-- swiper slide 1 -->
+        <div class="swiper-slide">
+          <div class="title" data-swiper-parallax="-300">
+            <a href="https://support.worldwildlife.org/site/SPageServer?pagename=can_home&s_src=web_HYCH&_ga=2.108213698.1553142144.1634005335-1354513535.1634005335">
+              <sl-button>Take Action</sl-button>
+            </a>
+          </div>
+          <div class="text" data-swiper-parallax="-100">
+            <p>
+              Join us to make change. Speak up for species and places through WWF’s Action Center
+            </p>
+          </div>
+        </div>
+        <!-- swiper slide 2 -->
+        <div class="swiper-slide">
+          <div class="title" data-swiper-parallax="-300">
+            <a href="https://gifts.worldwildlife.org/gift-center/gifts.aspx?sc=AWY2201OQ18316A05545RX&attrName=panda&sortOrder=popularity&_ga=2.108213698.1553142144.1634005335-1354513535.1634005335">
+              <sl-button>Panda-Themed Gifts</sl-button>
+            </a>
+          </div>
+          <div class="text" data-swiper-parallax="-100">
+            <p>
+              Make a gift to WWF’s global conservation efforts and choose from symbolic panda adoptions, apparel and more.                
+            </p>
+          </div>
+        </div>
+        <!-- swiper slide 3 -->
+        <div class="swiper-slide">
+          <div class="title" data-swiper-parallax="-300">
+            <a href="https://gifts.worldwildlife.org/gift-center/gifts/Species-Adoptions/Panda.aspx?sc=AWY1800OQ18317A01909RX">
+              <sl-button>Adopt a Panda</sl-button>
+            </a>
+          </div>
+          <div class="text" data-swiper-parallax="-100">
+            <p>
+              Give a gift that will help protect the future of nature. Make a symbolic adoption in support of WWF’s global efforts                
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+<!-- ----- FOOTER ----- -->
+  <div class="footer">
+    <div class="footer-left">
+      <h3>Thank you WWF for all you support!</h3>
+        <a href="https://www.worldwildlife.org/species/giant-panda">https://www.worldwildlife.org/species/giant-panda</a>
+          <sl-icon-button class="social" name="facebook" href="https://www.facebook.com/worldwildlifefund" style="font-size: 1.5rem"></sl-icon-button>
+          <sl-icon-button class="social" name="instagram" href="https://www.instagram.com/World_Wildlife/" style="font-size: 1.5rem"></sl-icon-button>
+          <sl-icon-button class="social" name="twitter" href="https://twitter.com/world_wildlife" style="font-size: 1.5rem"></sl-icon-button>
+          <sl-icon-button class="social" name="youtube" href="https://www.youtube.com/user/wwfus" style="font-size: 1.5rem"></sl-icon-button>
+    </div>
+    <div class="copywrite">
+      <p>This website has been created as part of an assignment in an approved course of study for Curtin University and contains copyright material not created by the author. All copyright material used remains copyright of the respective owners and has been used here pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia). No part of this work may be reproduced without consent of the original copyright owners. See code comments for references.</p>
+    </div>
+    <div class="panda-logo">
+      <a href="#top"><img src="Images/Panda-logo.png" alt="panda logo"></a>
+    </div>
+    <div class="rating">
+      <h3>How do you like my website?</h3>
+        <sl-dialog label="Thank You!" class="dialog-overview"> <!-- shoelace component #2 -->
+          Thank you for taking the time to look at my website! I hope you enjoyed your experience and were educated on the wonderful creatures that are Giant Pandas.
+        </sl-dialog>
+      <sl-rating class="rating-emojis" style="--symbol-size: 1.5rem; --symbol-color-active: rgb(2, 150, 2);"></sl-rating> <!-- shoelace component #3 -->
+    </div>
+  </div>
+  
+
+<!-- ----- SCRIPTS ----- -->
+    <!-- Scroll magic (used for home video)-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+    <!-- Swiper JS (used for get involved)-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- GSAP (used for scroll trigger)-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+
+    <script src="main.js"></script> <!-- linking to my javascript file-->
+</body>
+</html>
